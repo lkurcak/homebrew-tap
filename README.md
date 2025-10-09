@@ -1,4 +1,4 @@
-# Lkurcak Tap
+# lkurcak tap
 
 ## How do I install these formulae?
 

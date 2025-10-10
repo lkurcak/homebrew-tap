@@ -11,6 +11,12 @@ class Tend < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/tend-0.2.18"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "4142cb3ac7c4e2f81bd587ea88eea1a0e2aa071e2ebd364952acda0d31ace548"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4dd9812e58050848b362200a35ec48ce0235690feecdeaa1d848fe62ca35374a"
+  end
+
   depends_on "rust" => :build
 
   def install

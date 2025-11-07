@@ -9,6 +9,7 @@ on:
 jobs:
   test-bot:
     strategy:
+      fail-fast: false
       matrix:
         os: [ ubuntu-22.04, macos-13, macos-15 ]
     runs-on: ${{ matrix.os }}
@@ -33,7 +34,14 @@ jobs:
 
       - run: brew test-bot --only-cleanup-before
 
-      - run: brew test-bot --only-setup --skip-online-checks
+      - name: Clean homebrew-core tap
+        run: |
+          if [ -d "$(brew --repository homebrew/core)" ]; then
+            git -C "$(brew --repository homebrew/core)" reset --hard
+            git -C "$(brew --repository homebrew/core)" clean -fd
+          fi
+
+      - run: brew test-bot --only-setup
 
       - run: brew test-bot --only-tap-syntax
       - run: brew test-bot --only-formulae

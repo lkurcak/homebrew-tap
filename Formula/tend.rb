@@ -12,10 +12,9 @@ class Tend < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/tend-0.2.19"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "00fbb39c7465fee6f8aa76c8f7470fc759e19fa46250a8000d762ec0e99111a0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7ac70fc1e01330c6a4217b9791f0184d95520bac8d50ea7e0391effa2057d6a7"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/tend-0.2.20"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c06c7065b29a3fd74eeca897151eebd0572ca4a606a46c2e9605c2c572b4cc11"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "666da50a470ddbdce85633ff24e9f2963fafbd4da602e55c9bac12bdfab4db19"
   end
 
   depends_on "rust" => :build

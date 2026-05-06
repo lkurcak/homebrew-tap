@@ -11,6 +11,12 @@ class Ghelpr < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/ghelpr-0.1.4"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "f8dc0a593700ed1f4f7cbaea68e1f2e1c94e647856f592def5e1e802edc4aad9"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0744bb61ee259eb02b71115e415711b01bec0d78fad12eaea0bf6e3408536dc2"
+  end
+
   depends_on "rust" => :build
 
   def install

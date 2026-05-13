@@ -1,8 +1,8 @@
 class Ghelpr < Formula
   desc "CLI tool for working with GitHub pull requests"
   homepage "https://github.com/lkurcak/ghelpr"
-  url "https://github.com/lkurcak/ghelpr/archive/refs/tags/0.1.7.tar.gz"
-  sha256 "09052eac8c27f4d0c639f98198c5cd1ddac71354d48d5369ca7b42705018bf4d"
+  url "https://github.com/lkurcak/ghelpr/archive/refs/tags/0.2.0.tar.gz"
+  sha256 "313e58d1bc3b5c4bd3c1a66a36e04974b89182e32b8af266735e61ac824b9f30"
   license "MIT"
   head "https://github.com/lkurcak/ghelpr.git", branch: "main"
 

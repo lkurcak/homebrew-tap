@@ -12,9 +12,9 @@ class Ghelpr < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/ghelpr-0.1.5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "d2beea116fe711a3cfc62931cf636a8ad667a488f22c28540df4ccdada691582"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "8b6669ae0111afbbf19c072fc314cc69e99cef7ae1401909c45c6e68aea87f77"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/ghelpr-0.1.6"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "96fe42610616a6bce327921e62538a65239db1bdf5dd42f1fd49336fd3a5ae13"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "e9b2beb8bbb8ddf3378195e1de86f27592b9e38db960680183f7b0df846b0c35"
   end
 
   depends_on "rust" => :build

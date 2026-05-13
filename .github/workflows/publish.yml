@@ -1,13 +1,16 @@
 name: brew pr-pull
 
 on:
-  pull_request_target:
+  workflow_run:
+    workflows: ["brew test-bot"]
     types:
-      - labeled
+      - completed
 
 jobs:
   pr-pull:
-    if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
+    if: >
+      github.event.workflow_run.event == 'pull_request' &&
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-22.04
     permissions:
       actions: read
@@ -27,8 +30,13 @@ jobs:
       - name: Pull bottles
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST: ${{ github.event.pull_request.number }}
-        run: brew pr-pull --debug --tap="$GITHUB_REPOSITORY" "$PULL_REQUEST"
+          PULL_REQUEST: ${{ github.event.workflow_run.pull_requests[0].number }}
+        run: |
+          if [ -z "$PULL_REQUEST" ]; then
+            echo "::error::No pull request found for this workflow run"
+            exit 1
+          fi
+          brew pr-pull --debug --tap="$GITHUB_REPOSITORY" "$PULL_REQUEST"
 
       - name: Push commits
         uses: Homebrew/actions/git-try-push@main
@@ -36,7 +44,7 @@ jobs:
           branch: main
 
       - name: Delete branch
-        if: github.event.pull_request.head.repo.fork == false
+        if: github.event.workflow_run.head_repository.full_name == github.repository
         env:
-          BRANCH: ${{ github.event.pull_request.head.ref }}
+          BRANCH: ${{ github.event.workflow_run.head_branch }}
         run: git push --delete origin "$BRANCH"

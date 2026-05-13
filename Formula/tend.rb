@@ -1,8 +1,8 @@
 class Tend < Formula
   desc "Command-line tool for managing and running multiple processes"
   homepage "https://github.com/lkurcak/tend"
-  url "https://github.com/lkurcak/tend/archive/refs/tags/0.2.21.tar.gz"
-  sha256 "88aab5b0dc24afc7114f173ebf95b7b104ff3f78998b8fb5fc942b6b68a517a6"
+  url "https://github.com/lkurcak/tend/archive/refs/tags/1.0.0.tar.gz"
+  sha256 "4ebbcb2b73f12fe594dd4fbc132d385323131420e1c1876a05446fa6435a220f"
   license "Unlicense"
   head "https://github.com/lkurcak/tend.git", branch: "main"
 

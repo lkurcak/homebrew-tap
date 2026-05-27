@@ -32,9 +32,13 @@ jobs:
           key: ${{ matrix.os }}-rubygems-${{ steps.set-up-homebrew.outputs.gems-hash }}
           restore-keys: ${{ matrix.os }}-rubygems-
 
-      - name: Install bubblewrap
+      - name: Set up Linux sandbox
         if: runner.os == 'Linux'
-        run: sudo apt-get install -y bubblewrap
+        run: |
+          sudo apt-get install -y bubblewrap
+          sudo sysctl -w kernel.unprivileged_userns_clone=1
+          sudo sysctl -w user.max_user_namespaces=28633
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
 
       - run: brew test-bot --only-cleanup-before
 

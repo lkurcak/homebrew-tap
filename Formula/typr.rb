@@ -7,32 +7,26 @@ class Typr < Formula
     skip "The upstream source repository is private"
   end
 
-  bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e7686833df9f3f41d9edee36bef919ec5a2a47edc276963575c0bac25250e084"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f43575f588a52ee5db9ac54549301c462e4233a08e1a5b132a4d3d426d20bc1a"
-  end
-
   on_macos do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.0/typr-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ba5970669e079f8272c159261590b209459d32c1b008645b7c265468e53ba0e2"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.1/typr-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "b1b56065f6ec07035e48f77d06ac1a2d8802aaffec07b8c289e06ec1ef01d6af"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.0/typr-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ba5970669e079f8272c159261590b209459d32c1b008645b7c265468e53ba0e2"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.1/typr-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "b1b56065f6ec07035e48f77d06ac1a2d8802aaffec07b8c289e06ec1ef01d6af"
       depends_on arch: :arm64
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.0/typr-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f860b76fb1666aff59787f140263b88ee4ff8d646a6f72c02b6ba9e08c284811"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.1/typr-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7e44c60625f3565d505905e2b23bba6920fd135a2011793da1f8f0fa904f4dc4"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.0/typr-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "72559aebd820ce60b27f729468711b6c3127919abeceea819ccbe8151d701b7c"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.1.1/typr-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4ac08dfd8c6a7937c1bb0492e6d07d45759021f2414fff9068a0b8bb9d0183e4"
     end
   end
 

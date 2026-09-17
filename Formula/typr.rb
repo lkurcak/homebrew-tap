@@ -7,6 +7,12 @@ class Typr < Formula
     skip "The upstream source repository is private"
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-0.2.18"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "72cd587518a4f0e7b905459e5f14627943a34d48417e8b78f70be318640bcd57"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fa72b423b890ffaf72d779a89bd6260adde6e3f9b41dfcae60b7324a823fc752"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.18/typr-v0.2.18-aarch64-apple-darwin.tar.gz"

@@ -11,6 +11,12 @@ class Gud < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/gud-0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2e9dc22f96c16923e3e3fbc0e6e4b4fdd69d6737214241bcbe2bc4ed780e419b"
+    sha256 cellar: :any,                 x86_64_linux: "3eb15402578612f4707502735d21884dea4d2f266513797770e54629022de929"
+  end
+
   depends_on "rust" => :build
 
   def install

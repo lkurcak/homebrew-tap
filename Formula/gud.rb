@@ -1,8 +1,8 @@
 class Gud < Formula
   desc "Interactive git helper"
   homepage "https://github.com/lkurcak/gud"
-  url "https://github.com/lkurcak/gud/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "ab5701282652f3930a8e60220e671f800c85f6a9212cd93143c39d2426995387"
+  url "https://github.com/lkurcak/gud/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "c2068d92208011600575b8c7d2566093070aa3f88ec5c5a4a98254efc1cc3098"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/lkurcak/gud.git", branch: "main"
 

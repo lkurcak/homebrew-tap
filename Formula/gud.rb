@@ -12,9 +12,9 @@ class Gud < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/gud-0.1.4"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e5789ac7c136f779fb3f1d79a396216cf9c73550b0c61fdd909d55d01ef159fb"
-    sha256 cellar: :any,                 x86_64_linux: "626b62a6a19a0802ad2970bfa7a3cdc1a75315e75a8e74f91b06d32820db5b54"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/gud-0.1.5"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "5b2d5a00134b06706f71e622ce2023d342d6e93150e2ad4a0b5eda485d3ca017"
+    sha256 cellar: :any,                 x86_64_linux: "40500f6e5e002e82900fe2dae9cfdc5826f7a2744ea499eef356bf6aa5aa712a"
   end
 
   depends_on "rust" => :build

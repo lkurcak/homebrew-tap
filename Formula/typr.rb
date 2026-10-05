@@ -7,32 +7,26 @@ class Typr < Formula
     skip "The upstream source repository is private"
   end
 
-  bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-0.2.18"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "72cd587518a4f0e7b905459e5f14627943a34d48417e8b78f70be318640bcd57"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "fa72b423b890ffaf72d779a89bd6260adde6e3f9b41dfcae60b7324a823fc752"
-  end
-
   on_macos do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.18/typr-v0.2.18-aarch64-apple-darwin.tar.gz"
-      sha256 "45da82bd6d5541eea07e74b8b5641f9971525593275c1ec0d5d09201ae5fac7d"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.19/typr-v0.2.19-aarch64-apple-darwin.tar.gz"
+      sha256 "b8c672e7a0062a7ea7223b45268fb27c88488378f66d21d6e30651d94445c4c7"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.18/typr-v0.2.18-aarch64-apple-darwin.tar.gz"
-      sha256 "45da82bd6d5541eea07e74b8b5641f9971525593275c1ec0d5d09201ae5fac7d"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.19/typr-v0.2.19-aarch64-apple-darwin.tar.gz"
+      sha256 "b8c672e7a0062a7ea7223b45268fb27c88488378f66d21d6e30651d94445c4c7"
       depends_on arch: :arm64
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.18/typr-v0.2.18-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c6babeee75f3731c2f1782fbc7c6a1f096104913f7f3227025dae1b766f4df8e"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.19/typr-v0.2.19-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ea1eda2dd85490e4a8e8f6e3cb33a05078a642d75fae63e53107e773b4b7179d"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.18/typr-v0.2.18-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f14f18732fb4be9b739f6e34616e371132a7468a35744699bd6937df7d97a9a2"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.19/typr-v0.2.19-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "77d4e2cdcdfd1f524545e61110e3f76107f45c518bcab6b0ec326cbc705d6ee8"
     end
   end
 

@@ -8,6 +8,12 @@ class Ocalc < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/ocalc-0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "1a4015036d830fec2965e8cecae2f5fc503ab63e97d0f74f0a49d6732447dc27"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "0926bfd10d0c07aef9b0f0e66d11504ab8a90e0cf411865be032769501dca70b"
+  end
+
   on_macos do
     on_arm do
       url "https://github.com/lkurcak/ocalc/releases/download/v0.1.1/ocalc-v0.1.1-aarch64-apple-darwin.tar.gz"

@@ -11,6 +11,12 @@ class TLang < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/t-lang-0.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "4cecb0808aa959ccdd2248da926ad0320f978aa6ea7d0842cb24b3eaf0d22ed8"
+    sha256 cellar: :any,                 x86_64_linux: "c958de943b88badb52eb90b81f85f434c67efdbe09d9d1b32c29a706c18913e2"
+  end
+
   depends_on "rust" => :build
 
   def install

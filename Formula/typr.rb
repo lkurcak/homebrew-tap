@@ -38,7 +38,7 @@ class Typr < Formula
 
   def install
     bin.install "typr"
-    pkgshare.install "LICENSE", "CORPUS-COPYRIGHT"
+    pkgshare.install "LICENSE", "COPYRIGHT"
   end
 
   test do

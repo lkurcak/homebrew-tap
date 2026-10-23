@@ -25,11 +25,11 @@ class TLang < Formula
 
   test do
     (testpath/"fact.t").write <<~T
-      fn fact(n: int) -> int {
+      fn fact(n: i64) -> i64 with panic {
           if n <= 1 { 1 } else { n * fact(n - 1) }
       }
 
-      fn main() {
+      fn main() with panic {
           print(fact(10));
       }
     T

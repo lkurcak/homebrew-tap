@@ -21,18 +21,11 @@ class TLang < Formula
 
   def install
     system "cargo", "install", *std_cargo_args
+    # The test's program is t-lang's own, so its tests keep it working.
+    pkgshare.install "examples/brew.t"
   end
 
   test do
-    (testpath/"fact.t").write <<~T
-      fn fact(n: i64) -> i64 with panic {
-          if n <= 1 { 1 } else { n * fact(n - 1) }
-      }
-
-      fn main() with panic {
-          print(fact(10));
-      }
-    T
-    assert_equal "3628800\n", shell_output("#{bin}/t run fact.t")
+    assert_equal "3628800\n", shell_output("#{bin}/t run #{pkgshare}/brew.t")
   end
 end

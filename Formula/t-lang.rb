@@ -12,9 +12,9 @@ class TLang < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/t-lang-0.42.0"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e562c8ea2056a62aee9f4943e8c6981711587c9412a2181fc91f5968ae9c953c"
-    sha256                               x86_64_linux: "3c799a848be7670e1d608593b68bfad3285bcd594e01afc06c1c09d5ccc6b9c7"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/t-lang-0.43.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "2b2e2fe906f2165ba39a9a8f467804a951b47fdd941440a9e1fc260d7755f0a3"
+    sha256                               x86_64_linux: "70b4fd98ff483f4f778761168a9d212c011c6a78bae3fb5cc28d621626193f3a"
   end
 
   depends_on "rust" => :build

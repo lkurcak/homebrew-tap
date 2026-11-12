@@ -12,9 +12,9 @@ class Forge < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/forge-0.9.1"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "ad1771afb9941b8f95a71cd22c9fd61e81940c12300f1422b388e81ca8e7ceb0"
-    sha256 cellar: :any,                 x86_64_linux: "33cf1ab3eee0392dda6a930955b2576c19e5f5948566480d21fcb1986253fc67"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/forge-0.9.2"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "8fa3a8ee8fefaf27c00b7415e6bdc733d8331962c845539bfd976733db09d22c"
+    sha256 cellar: :any,                 x86_64_linux: "3706cb3bc5318e7e2eff784a7bc02cc45fed261341cab7b52f8db85a407f6b82"
   end
 
   depends_on "rust" => :build

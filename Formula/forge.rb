@@ -1,8 +1,8 @@
 class Forge < Formula
   desc "Keep a GitHub account's repositories in line with one manifest"
   homepage "https://github.com/lkurcak/forge"
-  url "https://github.com/lkurcak/forge/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "412e5e8ea27a0f7a4dc93884b85bd3f3475475f414ed75eb97cf11eaac76721e"
+  url "https://github.com/lkurcak/forge/archive/refs/tags/v0.11.0.tar.gz"
+  sha256 "d1ae71723445d6a07598009076cd9d6a0f25f043fb3285869c86f586626f4ef1"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/lkurcak/forge.git", branch: "main"
 

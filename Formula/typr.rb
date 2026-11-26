@@ -15,24 +15,24 @@ class Typr < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.22/typr-v0.2.22-aarch64-apple-darwin.tar.gz"
-      sha256 "8e17c72a2998b1bfbfb3d804d5ed600a639f9bc3c973b855a9ecd6b3474517cd"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.23/typr-v0.2.23-aarch64-apple-darwin.tar.gz"
+      sha256 "3a1aba2c22a7945d978abe8c0a61b3f02fd90b585a19ed14af8f28c090919ce5"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.22/typr-v0.2.22-aarch64-apple-darwin.tar.gz"
-      sha256 "8e17c72a2998b1bfbfb3d804d5ed600a639f9bc3c973b855a9ecd6b3474517cd"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.23/typr-v0.2.23-aarch64-apple-darwin.tar.gz"
+      sha256 "3a1aba2c22a7945d978abe8c0a61b3f02fd90b585a19ed14af8f28c090919ce5"
       depends_on arch: :arm64
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.22/typr-v0.2.22-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "600bc719fe79e8ec8ad7c922023ae5e5aace0e276f439560322fc04c86cbe604"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.23/typr-v0.2.23-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4516e94a343991ff4b64a1be1c22660f608b22d3128f0c7da562a2bedf31d6a2"
     end
     on_intel do
-      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.22/typr-v0.2.22-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "15a9966c1e882ae1f5f601fd71dbb341913b0c8ccf5cfa716b736a533c018871"
+      url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-dist-v0.2.23/typr-v0.2.23-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f44e216f44322b8365eed42d158aeca80d94cdbaaec6313daa8f526278adce4d"
     end
   end
 

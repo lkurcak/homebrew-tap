@@ -8,9 +8,9 @@ class Typr < Formula
   end
 
   bottle do
-    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-0.2.22"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "b57a9ff450370d9ceb5c7e2b5024767c2339124d2bad3c634c072f66d3291c5d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4c8e7c02921039753e86bf2489f654f3b6c09d4e57c9881f02a762b67ef405e5"
+    root_url "https://github.com/lkurcak/homebrew-tap/releases/download/typr-0.2.23"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "9c15535b81d75ff14c31280a903bbf0f1ea4736d3fa3d7886342799bf016eb40"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fbdfa555c434c10ac13197505524836275121864a976c186f3de811e9b3d4f9e"
   end
 
   on_macos do

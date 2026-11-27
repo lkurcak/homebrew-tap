@@ -1,8 +1,8 @@
 class TLang < Formula
   desc "Small no-GC language built one type-theory concept at a time"
   homepage "https://github.com/lkurcak/t-lang"
-  url "https://github.com/lkurcak/t-lang/archive/refs/tags/v0.108.0.tar.gz"
-  sha256 "140ed773ddfb612a5bd4aba941f79597f37459b308bcd00580b31eef8e5c4492"
+  url "https://github.com/lkurcak/t-lang/archive/refs/tags/v0.109.0.tar.gz"
+  sha256 "f9003e47d55e2fb68d3de87b2e815d27d5830b18815cc396c939e1a82a795223"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/lkurcak/t-lang.git", branch: "main"
 
